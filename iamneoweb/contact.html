@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iamneo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-image: url("images/indimg.jpg");
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #597df2;
+            padding: 1em 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #597df2;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            background-image: url("images/indimg.jpg");
+            color: rgb(23, 5, 5)9, 2, 2;
+        } 
+
+        .cta {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #597df2;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        .subjects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .subject {
+            flex: 0 0 calc(30% - 20px); 
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .subject:hover {
+            transform: scale(1.05);
+        }
+
+        .subject h3 {
+            color: #007BFF;
+            margin-bottom: 10px;
+            text-align: center; 
+        }
+
+        .subject p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/iamneo.svg" alt="startup logo" width="100" height="100">
+    </header>
+
+    <nav>
+        <a href="index.html">Subject</a>
+        <a href="test.html">Take Test</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div id="home" class="hero">
+        <p>"Iamneo" Empowering Enterprises & Universities through tailored Learning & Assessment Solutions.</p>
+    </div>
+
+    <div id="subjects" class="subjects">
+        <!-- <h2>SUBJECTS</h2> -->
+        <div class="subject">
+            <h3>Phone number</h3>
+            <p>Office: 9312453134</p>
+            <p>Mobile: 7463829209</p>
+        </div>
+        <div class="subject">
+            <h3>Social Media</h3>
+            <p>facebook@iamneo</p>
+            <p>instagram@iamneo</p>
+            
+        </div>
+        <div class="subject">
+            <h3>Mail us at</h3>
+            <p>iamneo@gmail.com</p>
+            
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Get Started Today</h2>
+        <p>Join us in making a difference.</p>
+        <button><a href="contact.html">Contact Us</a></button>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 iamneo. All rights reserved.</p>
+    </footer>
+    <script>
+        function logout() {
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+
+</html>
